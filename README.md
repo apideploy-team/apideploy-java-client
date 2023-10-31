@@ -2,7 +2,7 @@
 
 **apideploy-java-client** is a java system **API document automatic generation toolkit and [apideploy.com](https://www.apideploy.com) website deployment SDK**. It supports [Swagger2(OAS 2.0)](https://swagger.io/specification/v2/), [Swagger3 (OAS 3.0)](https://swagger.io/specification/v3/), [Javadoc specifications](https://en.wikipedia.org/wiki/Javadoc), and Java development frameworks such as [Spring WebMVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html), [Spring WebFlux](https://docs.spring.io/spring-framework/reference/web/webflux.html) and [Apache Dubbo](https://dubbo.apache.org/en/index.html)'s documentation comments.
 
-Note: This client is suitable for systems using Java 1.8 or below. If your system is based on Spring Boot 3.0 or above, please use apideploy-jakarta-client.
+Note: This client is suitable for systems using Java 1.8 or below. If your system is based on Spring Boot 3.0 or above, please use [apideploy-java-demos]( https://github.com/apideploy-team/apideploy-java-demos).
 
 ### Guides
 
@@ -43,11 +43,11 @@ public class Application {
 
 4.Run it and see the final result.
 
-The above three steps have completed all the configuration of apideploy. The next step is to write your Javadoc (strongly recommended) or complete the API definition based on Swagger. When everything is ready, run the system locally and the API will be automatically generated and synchronized to the apideploy website. Then you can happily check, debug and do version management on apideploy.
+The above three steps have completed all the configuration of apideploy. The next step is to write your Javadoc (strongly recommended) or complete the API definition based on Swagger. When everything is ready, run the system locally and the API will be automatically generated and synchronized to the [apideploy.com](https://www.apideploy.com) website. Then you can happily check, debug and do version management on [apideploy.com](https://www.apideploy.com) .
 
-### Demo
+### Samples
 
-For more use cases, please refer to
+For more samples, please refer to [apideploy-jakarta-client](https://github.com/apideploy-team/apideploy-jakarta-client).
 
 ### License
 
