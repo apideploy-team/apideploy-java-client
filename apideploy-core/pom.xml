@@ -10,8 +10,7 @@
 	</parent>
 
 	<artifactId>apideploy-core</artifactId>
-	<name>apideploy-java-client</name>
-	<description>apideploy-java-client</description>
+	<name>apideploy-core</name>
 
 	<dependencies>
 		<dependency>
