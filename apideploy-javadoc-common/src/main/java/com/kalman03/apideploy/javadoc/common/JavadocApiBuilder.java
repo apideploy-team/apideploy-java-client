@@ -11,15 +11,16 @@ import com.kalman03.apideploy.core.builder.ApiBuilderService;
 import com.kalman03.apideploy.core.constants.ApiBuilderType;
 import com.kalman03.apideploy.core.domain.ApibuilderParam;
 import com.kalman03.apideploy.core.utils.ApideployClientUtils;
-import com.power.doc.builder.ProjectDocConfigBuilder;
-import com.power.doc.builder.openapi.OpenApiBuilder;
-import com.power.doc.constants.FrameworkEnum;
-import com.power.doc.factory.BuildTemplateFactory;
-import com.power.doc.helper.JavaProjectBuilderHelper;
-import com.power.doc.model.ApiConfig;
-import com.power.doc.model.ApiDoc;
-import com.power.doc.model.openapi.OpenApiTag;
-import com.power.doc.template.IDocBuildTemplate;
+import com.ly.doc.builder.ProjectDocConfigBuilder;
+import com.ly.doc.builder.openapi.OpenApiBuilder;
+import com.ly.doc.constants.ComponentTypeEnum;
+import com.ly.doc.constants.FrameworkEnum;
+import com.ly.doc.factory.BuildTemplateFactory;
+import com.ly.doc.helper.JavaProjectBuilderHelper;
+import com.ly.doc.model.ApiConfig;
+import com.ly.doc.model.ApiDoc;
+import com.ly.doc.model.openapi.OpenApiTag;
+import com.ly.doc.template.IDocBuildTemplate;
 import com.thoughtworks.qdox.JavaProjectBuilder;
 
 /**
@@ -33,7 +34,7 @@ public abstract class JavadocApiBuilder implements ApiBuilderService<JavadocSync
 	@SuppressWarnings("unchecked")
 	@Override
 	public JavadocSyncData getApiObjects(ApibuilderParam apibuilderParam) {
-		ApiConfig apiConfig = new ApiConfig();
+		ApiConfig apiConfig = ApiConfig.getInstance();
 		apiConfig.setServerUrl(apibuilderParam.getApideployConfig().getServerUrls().get(0));
 		apiConfig.setServerEnv(apibuilderParam.getApideployConfig().getServerUrls().get(0));
 		apiConfig.setParamsDataToTree(true);
@@ -72,7 +73,7 @@ public abstract class JavadocApiBuilder implements ApiBuilderService<JavadocSync
 			Set<OpenApiTag> tags = new HashSet<>();
 			json.put("tags", tags);
 			json.put("paths", buildPaths(apiConfig, apiDocList, tags));
-			json.put("components", buildComponentsSchema(apiDocList));
+			json.put("components", buildComponentsSchema(apiDocList,ComponentTypeEnum.NORMAL));
 			return ApideployClientUtils.toJSONString(json);
 		}
 

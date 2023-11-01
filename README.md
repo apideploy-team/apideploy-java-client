@@ -2,7 +2,7 @@
 
 **apideploy-java-client** is a java system **API document automatic generation toolkit and [apideploy.com](https://www.apideploy.com) website deployment SDK**. It supports [Swagger2(OAS 2.0)](https://swagger.io/specification/v2/), [Swagger3 (OAS 3.0)](https://swagger.io/specification/v3/), [Javadoc specifications](https://en.wikipedia.org/wiki/Javadoc), and Java development frameworks such as [Spring WebMVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html), [Spring WebFlux](https://docs.spring.io/spring-framework/reference/web/webflux.html) and [Apache Dubbo](https://dubbo.apache.org/en/index.html)'s documentation comments.
 
-Note: This client is suitable for systems using Java 1.8 or below. If your system is based on Spring Boot 3.0 or above, please use [apideploy-java-demos]( https://github.com/apideploy-team/apideploy-java-demos).
+Note: This client is suitable for systems using Java 1.8 or below. The swagger part is implemented based on [springfox](https://github.com/springfox/springfox).If your system is based on Spring Boot 3.0 or above, please use [apideploy-jakarta-client]( https://github.com/apideploy-team/apideploy-jakarta-client).
 
 ### Guides
 
@@ -47,7 +47,7 @@ The above three steps have completed all the configuration of apideploy. The nex
 
 ### Samples
 
-For more samples, please refer to [apideploy-jakarta-client](https://github.com/apideploy-team/apideploy-jakarta-client).
+For more samples, please refer to [apideploy-java-demos](https://github.com/apideploy-team/apideploy-java-demos).
 
 ### License
 

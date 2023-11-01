@@ -3,7 +3,7 @@ package com.kalman03.apideploy.javadoc.common;
 import java.util.List;
 
 import com.kalman03.apideploy.core.domain.ApideployData;
-import com.power.doc.model.ApiDoc;
+import com.ly.doc.model.ApiDoc;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

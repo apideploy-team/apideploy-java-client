@@ -2,7 +2,7 @@
 
 **apideploy-java8-client** 是一个Java系统的API 文档自动生成工具包与[apideploy.com](https://www.apideploy.com)网站的部署SDK，它兼容[Swagger2（OAS 2.0）](https://swagger.io/specification/v2/), [Swagger3 (OAS 3.0)](https://swagger.io/specification/v3/), [Javadoc](https://zh.wikipedia.org/wiki/Javadoc)规范，支持Java开发框架如 [Spring WebMVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html), [Spring WebFlux](https://docs.spring.io/spring-framework/reference/web/webflux.html) 以及[Apache Dubbo](https://cn.dubbo.apache.org/zh-cn/)的文档注释。
 
-**注意：**该SDK适合使用**Java1.8以下**版本的系统（仅在1.8版本进行过测试，低于1.8请自行测试），**如果你的系统基于Spring Boot 3.0以上版本，请使用apideploy-jakarta-client**。
+**注意：**该SDK适合使用**Java1.8以下**版本的系统（仅在1.8版本进行过测试，低于1.8请自行测试），swagger 部分是基于[springfox](https://github.com/springfox/springfox)的实现。**如果你的系统基于Spring Boot 3.0以上版本，请使用[apideploy-jakarta-client](https://github.com/apideploy-team/apideploy-jakarta-client)**。
 
 ### 使用指南
 
@@ -46,7 +46,7 @@ public class Application {
 
 ### Demo
 
-更多使用案例，请参考
+更多使用案例，请参考 [apideploy-java-demos](https://github.com/apideploy-team/apideploy-java-demos).
 
 ### License
 
